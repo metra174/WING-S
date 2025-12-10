@@ -1,6 +1,6 @@
 import { MenuCategory, OperatingHours } from './types';
 
-export const WHATSAPP_NUMBER = "244923000000"; // Placeholder number, user should update
+export const WHATSAPP_NUMBER = "244948059824"; // Updated number
 export const WHATSAPP_MESSAGE = "Olá, estou a ver o menu do Wing’s e gostaria de fazer um pedido.";
 
 export const HOURS: OperatingHours[] = [
@@ -28,8 +28,7 @@ export const MENU_DATA: MenuCategory[] = [
       { name: "Wing's Asian", price: "7.500 Kz" },
       { 
         name: "Bife Tártaro", 
-        price: "16.000 Kz",
-        image: "https://images.unsplash.com/photo-1543340713-1b2ae03672e4?q=80&w=600&auto=format&fit=crop"
+        price: "16.000 Kz"
       },
       { name: "Pipocas de Carne", price: "9.000 Kz" },
       { name: "Ceviche Peruano de Garoupa", price: "14.000 Kz" },
@@ -255,7 +254,7 @@ export const MENU_DATA: MenuCategory[] = [
   {
     id: "cocktails",
     title: "Cocktails",
-    backgroundImage: "https://images.unsplash.com/photo-1536935338788-843bb6d8d992?q=80&w=1920&auto=format&fit=crop", // New Cocktail Background
+    backgroundImage: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=1920&auto=format&fit=crop", // Bar/Cocktail Atmosphere
     items: [
       { name: "Cocktail Caliente", price: "6.000 Kz" },
       { name: "Mojito", price: "5.000 Kz" },
@@ -339,7 +338,7 @@ export const MENU_DATA: MenuCategory[] = [
   {
     id: "espirituosas",
     title: "Bebidas Espirituosas",
-    backgroundImage: "https://images.unsplash.com/photo-1569529465841-dfecd0758f9b?q=80&w=1920&auto=format&fit=crop", // Whiskey/Spirits Background
+    backgroundImage: "https://images.unsplash.com/photo-1474722883778-792e7990302f?q=80&w=1920&auto=format&fit=crop", // Dark Bottles Background
     items: [
       { name: "Famous Grouse", price: "4.500 Kz" },
       { name: "Jameson", price: "4.500 Kz" },

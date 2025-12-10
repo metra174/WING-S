@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                O Sabor que Marca. Uma experiência gastronómica única com os melhores ingredientes e ambiente acolhedor.
              </p>
              <div className="flex justify-center md:justify-start space-x-4">
-               <a href="#" className="text-gray-400 hover:text-wings-gold transition-colors"><Instagram size={24} /></a>
+               <a href="https://www.instagram.com/wings.ao?igsh=YmpvbGpwYTQ3azl3" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-wings-gold transition-colors"><Instagram size={24} /></a>
                <a href="#" className="text-gray-400 hover:text-wings-gold transition-colors"><Facebook size={24} /></a>
              </div>
           </div>
