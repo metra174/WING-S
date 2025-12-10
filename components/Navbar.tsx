@@ -32,10 +32,15 @@ const Navbar: React.FC = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-wings-black/95 backdrop-blur-sm border-b border-wings-gold/20' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex-shrink-0 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-             <h1 className="font-serif text-2xl md:text-3xl font-bold tracking-wider text-wings-gold">
-              WING'S
-            </h1>
+          <div className="flex-shrink-0 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+             <div className="flex flex-col">
+               <h1 className="font-serif text-2xl md:text-3xl font-bold tracking-wider text-wings-gold leading-none">
+                WING'S
+              </h1>
+              <span className="text-[0.65rem] text-wings-goldlight uppercase tracking-[0.2em] font-light group-hover:text-white transition-colors">
+                Restaurante
+              </span>
+             </div>
           </div>
           
           <div className="hidden md:block">
