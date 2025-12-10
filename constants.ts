@@ -16,25 +16,20 @@ export const MENU_DATA: MenuCategory[] = [
   {
     id: "entradas",
     title: "Entradas",
-    backgroundImage: "https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1920&auto=format&fit=crop", // Dark Steak/Appetizer background
+    backgroundImage: "https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1920&auto=format&fit=crop",
     items: [
       { 
         name: "Wings Barbecue", 
         price: "7.500 Kz", 
-        description: "Asinhas de frango suculentas cobertas com molho barbecue caseiro.",
         image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?q=80&w=600&auto=format&fit=crop"
       },
-      { 
-        name: "Wing’s Sweet Chilli", 
-        price: "7.500 Kz",
-        image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?q=80&w=600&auto=format&fit=crop"
-      },
-      { name: "Wing’s By Wings", price: "7.500 Kz" },
-      { name: "Wing’s Asian", price: "7.500 Kz" },
+      { name: "Wing's Sweet Chilli", price: "7.500 Kz" },
+      { name: "Wing's By Wings", price: "7.500 Kz" },
+      { name: "Wing's Asian", price: "7.500 Kz" },
       { 
         name: "Bife Tártaro", 
         price: "16.000 Kz",
-        image: "https://images.unsplash.com/photo-1626804475297-411dbe631e85?q=80&w=600&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1543340713-1b2ae03672e4?q=80&w=600&auto=format&fit=crop"
       },
       { name: "Pipocas de Carne", price: "9.000 Kz" },
       { name: "Ceviche Peruano de Garoupa", price: "14.000 Kz" },
@@ -50,11 +45,11 @@ export const MENU_DATA: MenuCategory[] = [
         image: "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?q=80&w=600&auto=format&fit=crop"
       },
       { name: "Tiras de Frango", price: "10.000 Kz" },
-      { name: "Bao de Porco", price: "12.000 Kz" },
+      { name: "Bao de Carne de Porco", price: "12.000 Kz" },
       { name: "Bao de Gambas", price: "14.000 Kz" },
-      { name: "Giozas de Porco", price: "11.000 Kz" },
+      { name: "Giozas de Carne de Porco", price: "11.000 Kz" },
       { name: "Giozas de Camarão", price: "12.000 Kz" },
-      { name: "Tempura de Gambas", price: "14.000 Kz" },
+      { name: "Tempura de Gambás", price: "14.000 Kz" },
       { name: "Spring Rolls de Camarão", price: "12.000 Kz" },
       { name: "Ovos Rotos", price: "12.000 Kz" },
       { name: "Chouriço Assado", price: "6.000 Kz" },
@@ -65,18 +60,18 @@ export const MENU_DATA: MenuCategory[] = [
       { name: "Prego no Pão", price: "6.500 Kz" },
       { name: "Prego no Prato", price: "9.000 Kz" },
       { 
-        name: "Hambúrguer Wing’s c/ Batata", 
+        name: "Hambúrguer Wing's c/ Batata Frita", 
         price: "10.500 Kz",
         image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600&auto=format&fit=crop"
       },
-      { name: "Hambúrguer Wing’s com Queijo", price: "12.500 Kz" },
+      { name: "Hambúrguer Wing's com Queijo no Fogo c/ Batata-Frita", price: "12.500 Kz" },
       { name: "Sopa do Dia", price: "3.500 Kz" },
     ]
   },
   {
     id: "saladas",
     title: "Saladas",
-    backgroundImage: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1920&auto=format&fit=crop", // Fresh salad dark bg
+    backgroundImage: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1920&auto=format&fit=crop",
     items: [
       { 
         name: "Salada Caesar", 
@@ -84,102 +79,105 @@ export const MENU_DATA: MenuCategory[] = [
         image: "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?q=80&w=600&auto=format&fit=crop"
       },
       { name: "Salada de Camarão", price: "12.000 Kz" },
-      { name: "Salada Wing’s", price: "3.500 Kz" },
-      { name: "Salada Vegetariana", price: "8.000 Kz" },
+      { name: "Salada Wing's", price: "3.500 Kz" },
+      { name: "Salada Vegetariana", price: "8.000 Kz", description: "Com vegetais da época" },
       { name: "Salada de Frutas", price: "5.500 Kz" },
     ]
   },
   {
     id: "massas",
     title: "Massas e Arroz",
-    backgroundImage: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1920&auto=format&fit=crop", // Pasta dark bg
+    backgroundImage: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1920&auto=format&fit=crop",
     items: [
-      { 
-        name: "Massa à Bolonhesa", 
-        price: "16.000 Kz",
-        image: "https://images.unsplash.com/photo-1626844131082-256783844137?q=80&w=600&auto=format&fit=crop"
-      },
+      { name: "Massa à Bolonhesa", price: "16.000 Kz" },
       { name: "Massa Carbonara", price: "16.000 Kz" },
       { name: "Linguine Preto Surprise", price: "19.000 Kz" },
       { 
-        name: "Arroz de Marisco", 
+        name: "Arroz de Marisco (1 Pessoa)", 
         price: "19.000 Kz",
-        description: "Disponível para 1 pessoa (19.000 Kz) ou 2 pessoas (35.000 Kz).",
         image: "https://images.unsplash.com/photo-1534080564583-6be75777b70a?q=80&w=600&auto=format&fit=crop"
       },
+      { name: "Arroz de Marisco (2 Pessoas)", price: "35.000 Kz" },
     ]
   },
   {
     id: "carnes",
-    title: "Carnes",
-    backgroundImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1920&auto=format&fit=crop", // Meat/Grill background
+    title: "Pratos de Carne",
+    backgroundImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1920&auto=format&fit=crop",
     items: [
       { 
-        name: "Bife de Lombo 200g", 
+        name: "Bife de Lombo 200gr", 
         price: "22.000 Kz",
+        description: "Inclui duas guarnições",
         image: "https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=600&auto=format&fit=crop"
       },
-      { name: "Bife da Vazia", price: "18.000 Kz" },
-      { name: "Surf and Turf", price: "28.000 Kz" },
-      { 
-        name: "T-bone", 
-        price: "24.000 Kz",
-        image: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop"
-      },
-      { name: "Espetada Mista", price: "19.500 Kz" },
-      { name: "Picanha", price: "19.500 Kz" },
-      { name: "Maminha", price: "18.000 Kz" },
+      { name: "Bife da Vazia 200gr", price: "18.000 Kz", description: "Inclui duas guarnições" },
+      { name: "Surf and Turf", price: "28.000 Kz", description: "Bife da vazia com Gambas e duas guarnições" },
+      { name: "T-bone", price: "24.000 Kz", description: "Inclui duas guarnições" },
+      { name: "Espetada Mista de Carne e Camarão", price: "19.500 Kz", description: "Inclui duas guarnições" },
+      { name: "Picanha", price: "19.500 Kz", description: "Inclui arroz, batata frita, feijão, vinagrete, ananás" },
+      { name: "Maminha no Estendal", price: "18.000 Kz", description: "Inclui duas guarnições" },
       { 
         name: "Ribs Barbecue", 
         price: "17.000 Kz",
+        description: "Inclui batata frita e coleslaw",
         image: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop"
       },
-      { name: "Bife à Parmagiana", price: "14.000 Kz" },
+      { name: "Bife à Parmagiana de Frango", price: "14.000 Kz", description: "Inclui arroz e batata frita" },
     ]
   },
   {
     id: "peixes",
-    title: "Peixes",
-    backgroundImage: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1920&auto=format&fit=crop", // Seafood dark bg
+    title: "Pratos de Peixe",
+    backgroundImage: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1920&auto=format&fit=crop",
     items: [
       { 
         name: "Moqueca de Garoupa e Camarão", 
         price: "24.000 Kz",
         image: "https://images.unsplash.com/photo-1534939561126-855b8675edd7?q=80&w=600&auto=format&fit=crop"
       },
-      { name: "Espetada de Peixe e Camarão", price: "20.000 Kz" },
-      { name: "Peixe do Dia", price: "16.000 Kz" },
+      { name: "Espetada de Peixe e Camarão", price: "20.000 Kz", description: "Com direito a duas guarnições" },
+      { name: "Peixe do Dia", price: "16.000 Kz", description: "Com direito a duas guarnições" },
     ]
   },
   {
     id: "tabuas",
     title: "Tábuas",
-    backgroundImage: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1920&auto=format&fit=crop", // BBQ/Platter background
+    backgroundImage: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1920&auto=format&fit=crop",
     items: [
       { 
-        name: "Tábua Wing’s", 
+        name: "Tábua Wing's", 
         price: "32.000 Kz",
+        description: "Azinhas fritas c/ molhos a escolha do cliente, Ribs Barbecue, 1 Chouriço, 1 Batata frita",
         image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=600&auto=format&fit=crop"
       },
-      { name: "Tábua Premium", price: "55.000 Kz" },
-      { name: "Tábua Wing’s Grelhada", price: "32.000 Kz" },
-      { name: "Tábua Premium Grelhada", price: "55.000 Kz" },
+      { 
+        name: "Tábua Premium", 
+        price: "55.000 Kz",
+        description: "Azinhas fritas com molho a escolha do cliente, Ribs barbecue, 1 Vazia, 1 Chouriço, 2 Batatas fritas"
+      },
+      { 
+        name: "Tábua Wing's Grelhada", 
+        price: "32.000 Kz",
+        description: "Azinhas grelhadas c/ molho á escolha do cliente, Entrecosto grelhado, Chouriço grelhado, 1 Batata frita"
+      },
+      { 
+        name: "Tábua Premium Grelhada", 
+        price: "55.000 Kz",
+        description: "Azinhas grelhadas com molho á escolha do cliente, Entrecosto grelhado, 1 Vazia, 2 Chouriço grelhadas, 2 Batatas fritas"
+      },
     ]
   },
   {
     id: "guarnicoes",
-    title: "Guarnições",
-    backgroundImage: "https://images.unsplash.com/photo-1623238919637-803239e8a716?q=80&w=1920&auto=format&fit=crop", // Sides/Potatoes bg
+    title: "Guarnições / Extras",
+    backgroundImage: "https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=1920&auto=format&fit=crop",
     items: [
-      { 
-        name: "Batata Frita (vários)", 
-        price: "3.000 Kz",
-        image: "https://images.unsplash.com/photo-1630384060421-a4323ceca0ad?q=80&w=600&auto=format&fit=crop"
-      },
-      { name: "French Fries", price: "6.000 Kz" },
+      { name: "Batata Frita (Rena, Pré-frita, Batata-Doce)", price: "3.000 Kz" },
+      { name: "French Fries (Px)", price: "6.000 Kz" },
       { name: "Arroz Basmati", price: "3.000 Kz" },
       { name: "Feijão Preto", price: "3.000 Kz" },
-      { name: "Salada Wing’s", price: "3.500 Kz" },
+      { name: "Salada Wing's", price: "3.500 Kz" },
       { name: "Ovo Estrelado", price: "1.500 Kz" },
       { name: "Coleslaw", price: "3.000 Kz" },
     ]
@@ -187,47 +185,104 @@ export const MENU_DATA: MenuCategory[] = [
   {
     id: "molhos",
     title: "Molhos",
-    backgroundImage: "https://images.unsplash.com/photo-1626082927389-d6a369331398?q=80&w=1920&auto=format&fit=crop", // Sauces/Spices bg
+    backgroundImage: "https://images.unsplash.com/photo-1607532941433-304659e8198a?q=80&w=1920&auto=format&fit=crop",
     items: [
-      { name: "Barbecue", price: "1.200 Kz" },
-      { name: "Sweet Chilli", price: "1.200 Kz" },
-      { name: "Asian", price: "1.200 Kz" },
-      { name: "Mostarda e Natas", price: "2.000 Kz" },
-      { name: "Pimentas e Natas", price: "2.000 Kz" },
-      { name: "Cogumelo e Natas", price: "3.500 Kz" },
-      { name: "Cheddar", price: "3.500 Kz" },
+      { name: "Molho Barbecue", price: "1.200 Kz" },
+      { name: "Molho Sweet Chilli", price: "1.200 Kz" },
+      { name: "Molho Asian", price: "1.200 Kz" },
+      { name: "Molho Mostarda e Natas", price: "2.000 Kz" },
+      { name: "Molho de Pimentas e Natas", price: "2.000 Kz" },
+      { name: "Molho de Cogumelo e Natas", price: "3.500 Kz" },
+      { name: "Molho Cheddar", price: "3.500 Kz" },
     ]
   },
   {
     id: "kids",
     title: "Menu Kids",
-    backgroundImage: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1920&auto=format&fit=crop", // Pizza/Fun food bg
+    backgroundImage: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1920&auto=format&fit=crop",
     items: [
-      { name: "Massa à Bolonhesa", price: "8.000 Kz" },
+      { name: "Massa a Bolonhesa", price: "8.000 Kz" },
       { name: "Cheeseburguer", price: "8.000 Kz" },
     ]
   },
   {
     id: "sobremesas",
     title: "Sobremesas",
-    backgroundImage: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1920&auto=format&fit=crop", // Cake/Dessert bg
+    backgroundImage: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1920&auto=format&fit=crop",
     items: [
       { 
-        name: "Sobremesa Wing’s", 
+        name: "Sobremesa Wing's", 
         price: "6.500 Kz",
+        description: "Crepe com Gelado e Fruta",
         image: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=600&auto=format&fit=crop"
       },
-      { name: "French Toast Gelado", price: "6.500 Kz" },
-      { name: "Trufas de Brownie", price: "6.500 Kz" },
+      { name: "French Toast Gelado", price: "6.500 Kz", description: "Tosta doce Francesa Fresca c/ Chocolate e Gelado" },
+      { name: "Trufas de Brownie", price: "6.500 Kz", description: "Pedaços de Brownie c/ calda de Chocolate" },
       { name: "Fruta da Época", price: "4.000 Kz" },
-      { name: "Trouxinhas Deliciosas", price: "8.500 Kz" },
-      { name: "Tacos Delícia", price: "8.500 Kz" },
+      { name: "Trouxinhas Deliciosas", price: "8.500 Kz", description: "Recheadas de Frutos Vermelhos" },
+      { name: "Tacos Delicia", price: "8.500 Kz" },
+    ]
+  },
+  {
+    id: "pequeno_almoco",
+    title: "Pequeno-Almoço",
+    backgroundImage: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?q=80&w=1920&auto=format&fit=crop",
+    items: [
+      { name: "Café/Galão/Chá + Sandes ou Tosta Mista", price: "5.500 Kz" },
+      { name: "Café/Galão/Chá + Croissant Misto ou Pão de Leite Misto", price: "4.000 Kz" },
+      { name: "Croissant e Pão de Leite Simples", price: "1.200 Kz" },
+      { name: "Croissant e Pão de Leite Presunto com Manteiga", price: "3.000 Kz" },
+      { name: "Croissant e Pão de Leite Compota, Manteiga, Queijo, Fiambre", price: "1.800 Kz" },
+      { name: "Croissant e Pão de Leite Misto Queijo e Fiambre", price: "2.500 Kz" },
+      { name: "Ovos Mexidos Bacon", price: "3.500 Kz" },
+      { name: "Omelete Simples", price: "2.500 Kz" },
+      { name: "Choco Avelã", price: "1.850 Kz" },
+    ]
+  },
+  {
+    id: "tostas_sanduiches",
+    title: "Tostas e Sanduíches",
+    backgroundImage: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=1920&auto=format&fit=crop",
+    items: [
+      { name: "Simples", price: "1.000 Kz" },
+      { name: "Presunto e Manteiga", price: "2.500 Kz" },
+      { name: "Compota, Manteiga, Queijo, Fiambre", price: "1.500 Kz" },
+      { name: "Ovos Mexidos e Bacon", price: "3.500 Kz" },
+      { name: "Omelete Simples", price: "2.000 Kz" },
+      { name: "Choco Avelã", price: "1.650 Kz" },
+    ]
+  },
+  {
+    id: "cocktails",
+    title: "Cocktails",
+    backgroundImage: "https://images.unsplash.com/photo-1536935338788-843bb6d8d992?q=80&w=1920&auto=format&fit=crop", // New Cocktail Background
+    items: [
+      { name: "Cocktail Caliente", price: "6.000 Kz" },
+      { name: "Mojito", price: "5.000 Kz" },
+      { name: "Margarita", price: "5.500 Kz" },
+      { name: "Caipirinha de Maracujá", price: "5.000 Kz" },
+      { name: "Cocktail da Wing's", price: "5.000 Kz" },
+      { name: "Caipi Black", price: "4.500 Kz" },
+      { name: "Dry Martini", price: "6.000 Kz" },
+      { name: "Old Fashioned", price: "6.000 Kz" },
+      { name: "Moscow Mule", price: "6.000 Kz" },
+      { name: "Cosmopolitan", price: "5.000 Kz" },
+      { name: "Sex And Beach", price: "6.000 Kz" },
+      { name: "Piña Colada", price: "5.500 Kz" },
+      { name: "Cuba Libre", price: "4.500 Kz" },
+      { name: "Margarita Wing's", price: "4.500 Kz" },
+      { name: "Lemon Drop Martini", price: "6.000 Kz" },
+      { name: "Gin Wing's (Com Frutos Vermelhos)", price: "7.000 Kz" },
+      { name: "Cocktail Parais", price: "6.000 Kz" },
+      { name: "Caipirinha Mágica", price: "6.000 Kz" },
+      { name: "Milkshake da Casa", price: "6.000 Kz" },
+      { name: "Daiquiri", price: "6.000 Kz" },
     ]
   },
   {
     id: "sangrias",
     title: "Sangrias",
-    backgroundImage: "https://images.unsplash.com/photo-1572635196184-84e35138cf6c?q=80&w=1920&auto=format&fit=crop", // Sangria bg
+    backgroundImage: "https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?q=80&w=1920&auto=format&fit=crop",
     items: [
       { name: "Sangria Cítrica", price: "16.000 Kz" },
       { name: "Sangria de Frutos Vermelhos", price: "18.000 Kz" },
@@ -235,54 +290,93 @@ export const MENU_DATA: MenuCategory[] = [
   },
   {
     id: "espumantes",
-    title: "Espumantes",
-    backgroundImage: "https://images.unsplash.com/photo-1598155523122-3842334d6c10?q=80&w=1920&auto=format&fit=crop", // Champagne bg
+    title: "Espumante",
+    backgroundImage: "https://images.unsplash.com/photo-1498429152472-9a433d9ddf3b?q=80&w=1920&auto=format&fit=crop",
     items: [
-      { name: "Seleção de Espumantes Premium", price: "Variável", description: "Consulte a nossa carta de garrafas selecionadas." },
+      { name: "Chandon Brut", price: "65.000 Kz" },
+      { name: "Chandon Rosé", price: "80.000 Kz" },
     ]
   },
   {
     id: "vinhos_brancos",
     title: "Vinhos Brancos",
-    backgroundImage: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1920&auto=format&fit=crop", // White wine bg
+    backgroundImage: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1920&auto=format&fit=crop",
     items: [
       { name: "Vinho Branco ao Copo", price: "3.500 Kz" },
+      { name: "Altano Branco", price: "25.000 Kz" },
+      { name: "Alandra Branco", price: "15.000 Kz" },
+      { name: "Planalto Branco", price: "25.000 Kz" },
       { name: "Vinho Branco da Casa", price: "14.000 Kz" },
+      { name: "EA Branco", price: "10.000 Kz" },
+      { name: "Quinta das Bolotas", price: "18.000 Kz" },
+      { name: "Segredos de São Miguel", price: "18.000 Kz" },
     ]
   },
   {
     id: "vinhos_tintos",
     title: "Vinhos Tintos",
-    backgroundImage: "https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?q=80&w=1920&auto=format&fit=crop", // Red wine bg
+    backgroundImage: "https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?q=80&w=1920&auto=format&fit=crop",
     items: [
-      { name: "Vinho Tinto ao Copo", price: "3.500 Kz" },
+      { name: "Vinho ao Copo Tinto", price: "3.500 Kz" },
+      { name: "Carm Tinto", price: "30.000 Kz" },
+      { name: "Marquês de Borba Tinto", price: "25.000 Kz" },
+      { name: "Almendra Tinto", price: "16.000 Kz" },
+      { name: "Canti", price: "13.000 Kz" },
       { name: "Vinho da Casa Tinto", price: "14.000 Kz" },
     ]
   },
   {
     id: "gins",
-    title: "Gins",
-    backgroundImage: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1920&auto=format&fit=crop", // Gin bg
+    title: "Gin's",
+    backgroundImage: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1920&auto=format&fit=crop",
     items: [
-      { name: "Gin Wing’s (Frutos Vermelhos)", price: "7.000 Kz" },
+      { name: "Gordon's", price: "5.500 Kz" },
+      { name: "Hendrick's", price: "7.000 Kz" },
+      { name: "Bulldog", price: "6.500 Kz" },
+      { name: "Ten", price: "6.500 Kz" },
+    ]
+  },
+  {
+    id: "espirituosas",
+    title: "Bebidas Espirituosas",
+    backgroundImage: "https://images.unsplash.com/photo-1569529465841-dfecd0758f9b?q=80&w=1920&auto=format&fit=crop", // Whiskey/Spirits Background
+    items: [
+      { name: "Famous Grouse", price: "4.500 Kz" },
+      { name: "Jameson", price: "4.500 Kz" },
+      { name: "Red Label", price: "4.500 Kz" },
+      { name: "Black Label", price: "4.500 Kz" },
+      { name: "Aguardente Aliança Velha", price: "4.000 Kz" },
+      { name: "Courvoisier Extravagance (Copo)", price: "20.000 Kz" },
+      { name: "Brandy 1920", price: "4.500 Kz" },
+      { name: "Martini Rosso", price: "4.500 Kz" },
+      { name: "Martini Bianco", price: "4.500 Kz" },
+      { name: "Amarula", price: "4.500 Kz" },
+      { name: "Shot Tequila", price: "5.000 Kz" },
+      { name: "Shot de Absinto com Fogo", price: "5.000 Kz" },
     ]
   },
   {
     id: "cervejas",
     title: "Cervejas",
-    backgroundImage: "https://images.unsplash.com/photo-1618183182173-0d64d5c41469?q=80&w=1920&auto=format&fit=crop", // Beer bg
+    backgroundImage: "https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?q=80&w=1920&auto=format&fit=crop",
     items: [
-      { name: "Nocal", price: "1.500 Kz" },
-      { name: "Eka", price: "1.500 Kz" },
-      { name: "Cuca", price: "1.500 Kz" },
+      { name: "Fino", price: "1.700 Kz" },
+      { name: "Lambreta", price: "900 Kz" },
+      { name: "Cerveja (Nocal, Eka, Cuca)", price: "1.500 Kz" },
     ]
   },
   {
     id: "sumos_refrigerantes",
-    title: "Sumos & Refrigerantes",
-    backgroundImage: "https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=1920&auto=format&fit=crop", // Juice bg
+    title: "Sumos e Refrigerantes",
+    backgroundImage: "https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=1920&auto=format&fit=crop",
     items: [
+      { name: "Laranja Nutry Pacote", price: "3.000 Kz" },
+      { name: "Tutti-Frutti Nutry Pacote", price: "3.000 Kz" },
       { name: "Sumo Compal Lata", price: "2.000 Kz" },
+      { name: "Coca-Cola", price: "1.800 Kz" },
+      { name: "Sprite", price: "1.800 Kz" },
+      { name: "Fanta", price: "1.800 Kz" },
+      { name: "7Up", price: "1.800 Kz" },
       { name: "Sumo Natural de Laranja", price: "3.800 Kz" },
       { name: "Sumo Natural de Ananás", price: "3.800 Kz" },
       { name: "Sumo Natural de Fruta da Época", price: "3.800 Kz" },
@@ -290,8 +384,8 @@ export const MENU_DATA: MenuCategory[] = [
   },
   {
     id: "cafes_chas",
-    title: "Cafés & Chás",
-    backgroundImage: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=1920&auto=format&fit=crop", // Coffee bg
+    title: "Café e Chá",
+    backgroundImage: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=1920&auto=format&fit=crop",
     items: [
       { name: "Café", price: "1.200 Kz" },
       { name: "Chá", price: "1.200 Kz" },
@@ -300,7 +394,7 @@ export const MENU_DATA: MenuCategory[] = [
   {
     id: "aguas",
     title: "Águas",
-    backgroundImage: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?q=80&w=1920&auto=format&fit=crop", // Water bg
+    backgroundImage: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?q=80&w=1920&auto=format&fit=crop",
     items: [
       { name: "Água 0,5L", price: "1.000 Kz" },
       { name: "Água 1,5L", price: "1.800 Kz" },
@@ -309,33 +403,4 @@ export const MENU_DATA: MenuCategory[] = [
       { name: "Ginger Ale", price: "1.800 Kz" },
     ]
   },
-  {
-    id: "pequeno_almoco",
-    title: "Pequeno-Almoço",
-    backgroundImage: "https://images.unsplash.com/photo-1533089862017-5614a957054c?q=80&w=1920&auto=format&fit=crop", // Breakfast bg
-    items: [
-      { name: "Sandes/Tosta mista + Café/Chá", price: "5.500 Kz" },
-      { name: "Croissant/Pão de leite misto + Café/Chá", price: "4.000 Kz" },
-      { name: "Croissant simples", price: "1.200 Kz" },
-      { name: "Presunto com manteiga", price: "3.000 Kz" },
-      { name: "Compota + queijo + fiambre", price: "1.800 Kz" },
-      { name: "Misto", price: "2.500 Kz" },
-      { name: "Ovos mexidos com bacon", price: "3.500 Kz" },
-      { name: "Omelete simples", price: "2.500 Kz" },
-      { name: "Choco avelã", price: "1.850 Kz" },
-    ]
-  },
-  {
-    id: "tostas_sanduiches",
-    title: "Tostas / Sanduíches",
-    backgroundImage: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=1920&auto=format&fit=crop", // Sandwich bg
-    items: [
-      { name: "Simples", price: "1.000 Kz" },
-      { name: "Presunto e manteiga", price: "2.500 Kz" },
-      { name: "Compota/queijo/fiambre", price: "1.500 Kz" },
-      { name: "Ovos mexidos e bacon", price: "3.500 Kz" },
-      { name: "Omelete simples", price: "2.000 Kz" },
-      { name: "Choco avelã", price: "1.650 Kz" },
-    ]
-  }
 ];
