@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-AO">
+<html lang="pt-AO" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
@@ -18,6 +19,8 @@
                 gold: '#d4af37',
                 goldlight: '#f3e5ab',
                 red: '#8b0000',
+                cream: '#f9f9f5', // Added for light mode
+                gray: '#e5e5e5',  // Added for light mode
               }
             },
             fontFamily: {
@@ -30,8 +33,9 @@
     </script>
     <style>
       body {
-        background-color: #0a0a0a;
-        color: #f5f5f5;
+        /* Default colors are handled by Tailwind classes in App.tsx now, 
+           but we keep a base fallback */
+        background-color: #0a0a0a; 
       }
       .scrollbar-hide::-webkit-scrollbar {
           display: none;

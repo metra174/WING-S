@@ -19,17 +19,18 @@ const MenuSection: React.FC<Props> = ({ category, inverted = false }) => {
             className="w-full h-full object-cover object-center"
           />
         ) : (
-          <div className={`w-full h-full ${inverted ? 'bg-wings-dark' : 'bg-wings-black'}`}></div>
+          <div className={`w-full h-full transition-colors duration-300 ${inverted ? 'bg-wings-gray dark:bg-wings-dark' : 'bg-wings-cream dark:bg-wings-black'}`}></div>
         )}
-        {/* Dark Overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-black/85"></div>
+        {/* Overlay to ensure text readability */}
+        {/* Light Mode: White Overlay / Dark Mode: Black Overlay */}
+        <div className="absolute inset-0 bg-white/90 dark:bg-black/85 transition-colors duration-300"></div>
       </div>
 
       {/* Content Layer */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-wings-gold text-sm font-bold uppercase tracking-widest">Wing's Menu</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-white mt-2 mb-4 drop-shadow-lg">{category.title}</h2>
+          <h2 className="font-serif text-4xl md:text-5xl text-gray-900 dark:text-white mt-2 mb-4 drop-shadow-sm dark:drop-shadow-lg transition-colors duration-300">{category.title}</h2>
           <div className="h-1 w-24 bg-wings-red mx-auto shadow-sm"></div>
         </div>
 
@@ -38,7 +39,7 @@ const MenuSection: React.FC<Props> = ({ category, inverted = false }) => {
             <div key={index} className="group">
               {/* Image (if exists) - Displayed centrally above text */}
               {item.image && (
-                <div className="mb-5 overflow-hidden rounded-lg border border-wings-gold/20 shadow-lg shadow-black/80">
+                <div className="mb-5 overflow-hidden rounded-lg border border-gray-200 dark:border-wings-gold/20 shadow-lg dark:shadow-black/80">
                   <img 
                     src={item.image} 
                     alt={item.name} 
@@ -50,21 +51,21 @@ const MenuSection: React.FC<Props> = ({ category, inverted = false }) => {
               {/* Text Content */}
               <div className="w-full">
                 <div className="flex items-baseline justify-between mb-2">
-                  <h4 className="text-xl font-medium text-gray-100 group-hover:text-wings-gold transition-colors duration-300 truncate pr-2 drop-shadow-md">
+                  <h4 className="text-xl font-medium text-gray-800 dark:text-gray-100 group-hover:text-wings-gold transition-colors duration-300 truncate pr-2 drop-shadow-sm">
                     {item.name}
                   </h4>
                   
                   {/* Dotted Line */}
-                  <div className="flex-grow mx-2 border-b-2 border-dotted border-gray-600 relative -top-1 opacity-40 hidden sm:block"></div>
+                  <div className="flex-grow mx-2 border-b-2 border-dotted border-gray-400 dark:border-gray-600 relative -top-1 opacity-40 hidden sm:block"></div>
                   
-                  <span className="text-xl font-bold text-wings-gold whitespace-nowrap drop-shadow-md">
+                  <span className="text-xl font-bold text-wings-gold whitespace-nowrap drop-shadow-sm">
                     {item.price}
                   </span>
                 </div>
                 
                 {/* Description */}
                 {item.description && (
-                  <p className="text-sm text-gray-300 font-light leading-relaxed drop-shadow-sm">{item.description}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 font-light leading-relaxed drop-shadow-sm transition-colors duration-300">{item.description}</p>
                 )}
               </div>
             </div>
