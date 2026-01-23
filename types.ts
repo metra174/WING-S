@@ -16,3 +16,7 @@ export interface OperatingHours {
   day: string;
   time: string;
 }
+
+export interface CartItem extends MenuItem {
+  quantity: number;
+}
