@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-300 dark:border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 dark:text-gray-600 transition-colors">
-          <p>&copy; {new Date().getFullYear()} Restaurante Wing's. Todos os direitos reservados.</p>
+          <p>&copy; 2026 Restaurante Wing's. Todos os direitos reservados.</p>
           <p className="mt-2 md:mt-0">Desenvolvido para excelência.</p>
         </div>
       </div>

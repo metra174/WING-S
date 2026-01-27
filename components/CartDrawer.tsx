@@ -25,7 +25,7 @@ const CartDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
 
     const itemLines = cart.map(item => `>  * ${item.quantity}x ${item.name} (${item.price})`).join('\n');
     
-    const message = `🍗 NOVO PEDIDO - WING'S 2025 🍗\n\n📍 MESA: ${tableNumber}\n\nITENS:\n${itemLines}\n\n💰 TOTAL ESTIMADO: ${formatCurrency(totalPrice)}\n\nPedido enviado via Cardápio Digital`;
+    const message = `🍗 NOVO PEDIDO - WING'S 2026 🍗\n\n📍 MESA: ${tableNumber}\n\nITENS:\n${itemLines}\n\n💰 TOTAL ESTIMADO: ${formatCurrency(totalPrice)}\n\nPedido enviado via Cardápio Digital`;
 
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
   };
